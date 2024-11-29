@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title> my web page</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                 font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: #666;
+                padding: 10px;
+                text-align: center;
+                font-size: 15px;
+                color: white;
+            }
+            nav{
+               background-color: seagreen;
+               color: black;
+               height: 600px;
+               float: left;
+               width: 30%;
+    
+            }
+            nav ul{
+                list-style-type: disc;
+                padding: 0px;
+            }
+            article{
+                float: right;
+                background-color:slategrey;
+                
+                width: 70%;
+                
+            
+            
+                
+
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                background-color: brown;
+                padding: 10px;
+                text-align: center;
+                color: black;
+            }
+            @media(max-width:600px){
+                nav, article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>Header</p>
+            <p style="text-align: right;"><a href="Log in .html" target="article">Log in</a></p>
+            <br>
+            <p style="text-align: right;"><a href="sign up.html" target="article">sign up</a></p>
+            
+        </header>
+        
+        <section>
+        <nav>
+            <ul>
+                <div>
+                <li><a href="Gallery.html" target="article">Gallery</a></li>
+            </div>
+            <br>
+            <br>
+            <div>
+            <li><a href="Story.html" target="article">Story</a></li>
+        </div>
+        <br>
+        <br>
+            <div>
+                <li><a href="About us.html" target="article">About us</a></li>
+            </div>
+            <br>
+            <br>
+            <div>
+                <li><a href="form.html" target="article">form</a></li>
+            </div>
+
+            </ul>
+        </nav>
+        <article>
+            <iframe src="" name="article" height="600px" width="800px"></iframe>
+        </article>
+        
+    </section>
+        <footer>
+            <p>footer</p>
+            <p style="text-align: right; color: blue;"><a href="privacy">privacy</a></p>
+            <p style="text-align: left; color: darkorange;"><a href="terms">terms</a></p>
+        </footer>
+    </body>
+</html>
